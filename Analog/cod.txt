@@ -1,0 +1,25 @@
+/* 	sensor de luz LDR analog reads
+	by YGC
+	labtec@umce.cl
+*/
+
+//=== Estructura principal ===
+int p1Analog = 0; 	//analog pin
+
+void setup()                    
+{
+   Serial.begin(9600);          
+  }
+
+
+void loop()                     
+{
+  long analogLDR = analogRead(p1Analog);
+    
+  Serial.print("Analogo: ");
+  Serial.println(analogLDR);
+   
+  delay(250);
+  
+}
+
